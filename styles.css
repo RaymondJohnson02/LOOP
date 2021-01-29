@@ -1,0 +1,189 @@
+
+body {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'Lato', sans-serif;
+}
+
+/* navbar */
+.navbar {
+    background-color: darkslateblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar > .right > div{
+    margin-right: 20px;
+    font-size: 1em;
+    /* text-transform: uppercase; */
+}
+
+.brand{
+    font-size: 25px;
+    color: white;   
+}
+.navlink {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+}
+
+.navlink a{
+    color: lightgray;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.navlink a:hover{
+    color: white;
+}
+
+/* content */
+.event{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.event-detail{
+    position: relative;
+    z-index: -1;
+}
+
+.event-logo{
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+    
+}
+
+.event-description{
+    position:absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 250px 380px 100px;
+}
+
+.event-description .desc1{
+    color: white;
+    font-size: 3.2em;
+}
+
+.event-description .desc2{
+    color: white;
+    font-size: 2em;
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em; 
+    padding: 8px 10px 25px; 
+    padding-right: 350px; 
+    text-align: center;
+}
+.detail-description{
+    font-size: 1.2em;
+    text-align: center;
+
+}
+
+.speaker-detail{
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.benefit{
+    padding: 20px;
+}
+
+/* portfolio */
+.portfolio-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item{
+    padding: 20px;
+    position: relative;
+    z-index: -1;
+}
+
+.image-background{
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(10%);
+}
+
+.image-text{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 20px;
+}
+
+.logo img{
+    width: 50%;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.image-text .subtitle{
+    transition: 1s;
+    color: white;
+}
+
+.qa{
+    font-size: 1.2em;
+    color: white;
+    align-items: center;
+    padding: 20px 250px 20px;
+}
+.qa div{
+    text-align: center;
+    padding: 10px 10px 10px;
+}
+
+.q{
+    background-color: blueviolet;
+}
+.a{
+    background-color: darkslateblue;
+}
+.contact{
+    display:flex;
+    flex-direction: row;
+    padding: 12px 0px 8px;
+    color: white;
+}
+
+.contact > div{
+    padding-left: 8px;
+}
